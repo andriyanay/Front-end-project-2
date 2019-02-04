@@ -33,7 +33,7 @@ var correct = 0;      		//correct answers
 var incorrect = 0;   	    //incorrect answers
 var unanswered = 0;   		//incorrect answers due to timeout 
 var triviaCounter = 0;      //question counter
-var timer = 20;		  		//timer, 20 sec	
+var timer = 10;		  		//timer, 20 sec	
 var countdown;				//the countdown for the timer 
 
 // Main screen for the game 
@@ -60,7 +60,7 @@ function startGame() {
 	incorrect = 0;
 	unanswered = 0;
 	triviaCounter = 0;
-	timer = 20;
+	timer = 10;
 
 	mainBody();
 	clock()
@@ -70,7 +70,7 @@ function startGame() {
 function mainBody() {
 	$('.start-button').hide();
 
-	mainScreen = "<p>Time Remaining: <div class='timer'>20</div></p>" + 
+	mainScreen = "<p class='time'>Time Remaining: <div class='timer'>10</div></p>" + 
 	"<p class='question'>" + questions[triviaCounter] + 
 	"</p><p class='answer'>" + answers[triviaCounter][0] + 
 	"</p><p class='answer'>" + answers[triviaCounter][1] +
@@ -115,7 +115,7 @@ $("#screen").on("click", ".answer", function(){
 function nextQuestion() {
 	if (triviaCounter < 9) {
 	triviaCounter++;
-	timer = 20;
+	timer = 10;
 	
 	mainBody();
 	clock();
@@ -128,26 +128,26 @@ function nextQuestion() {
 
 // Player ran out of time to answer
 function timeOut() {
-	mainScreen = "<p> Too late! The correct answer is: " + correctAnswers[triviaCounter]; "</p>" ;
+	// mainScreen = "<p> Time ran out! The correct answer is: " + correctAnswers[triviaCounter]; "</p>" ;
 	unanswered++;
 	$("#screen").html(mainScreen);
-	setTimeout(nextQuestion, 2000); 
+	setTimeout(nextQuestion); 
 };
 
 // Player got an answer wrong
 function wrongAnswer() {
-	mainScreen = "<p> Oh no! The correct answer is: " + correctAnswers[triviaCounter]; "</p>" ;
+	// mainScreen = "<p>The correct answer is: " + correctAnswers[triviaCounter]; "</p>" ;
 	incorrect++;
 	$("#screen").html(mainScreen);
-	setTimeout(nextQuestion, 2000); 
+	setTimeout(nextQuestion); 
 };
 
 // Player got an answer right 
 function rightAnswer() {
-	mainScreen = "<p> Yes! The correct answer is: " + correctAnswers[triviaCounter]; "</p>" ;
+	// mainScreen = "<p> The correct answer is: " + correctAnswers[triviaCounter]; "</p>" ;
 	correct++;
 	$("#screen").html(mainScreen);
-	setTimeout(nextQuestion, 2000); 
+	setTimeout(nextQuestion); 
 };
 
 // Screen with the results

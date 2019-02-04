@@ -1,142 +1,27 @@
-
-html {
-    margin: 0;
-}
-
-body {
-    font-family: 'KoHo', sans-serif;
-    font-family: 'Nanum Gothic', sans-serif;
-    font-family: 'Dosis', sans-serif;
-    height: 100%;
-    margin: 0;
-}
-
-.bg {
-    background-image: url(images/bg.png);
-    /* background-image: linear-gradient(to right, purple , yellow); */
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.navbar{
-    background-color: black;
-    opacity: 0.6;
-    color: white;
-}
-
-.container {
-    margin-top: 5%;
-    margin-bottom: 25%;
-    padding-top: 1%; 
-    padding-bottom: 1%; 
-    width: 100%;
-    max-width: 800px;
-    text-align: center;
-    background-color: black;
-    opacity: 0.7;
-    color: white;
-}
-
-/* a:link {
-    color: white;
-    text-decoration: none;
-}
-
-a:hover {
-    color: white;
-    text-decoration: none;
-}
-
-a:visited {
-    color: white;
-    text-decoration: none;
-}
-
-a:active{
-    color: white;
-    text-decoration: none;
-} */
-
-/* @media screen and (max-width: 600px) {
-    div.bg {
-        background-image: url(images/bg.png);
-
-      height: 100%;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-  } */
-
-/*---------------
-Game
-------------------*/
-
-.start-button {
- 
-  border: 0;
-  outline: none;
-  border-radius: 0;
-  padding: 15px;
-  font-size: 2rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  background: #4D438B;
-  color: #ffffff;
-  transition: all.5s ease;
-  -webkit-appearance: none;
-}
-  .start-button:hover,
-  .start-button:focus {
-    background: #330066;  
-}
-
-.time{
-  color: #4D438B;
-  font-size: 1rem;
-}
-
-.question{
-  color: #4D438B;
-  font-size: 2rem;
-}
-
-  /*-------------------
-  login
-  ----------------------------*/
-
-  *,
+*,
 *:before,
 *:after {
   box-sizing: border-box;
 }
 
 
-/* body {
+body {
   background: #c1bdba;
   font-family: Helvetica;
-} */
+}
 
 a {
   text-decoration: none;
-  color: white;
+  color: #1ab188;
   transition: 0.5s ease;
 }
-
 a:hover {
-    color:#4D438B;
-    text-decoration: none;
+    color:#148f6e;
   }
 
 
 .form {
   background: #13232f, 0.9;
-  background-color: black;
-  opacity: 0.7;
-  
   padding: 40px;
   max-width: 600px;
   margin: 40px auto;
@@ -169,12 +54,12 @@ li a {
     transition: 0.5s ease;
 }
 li a:hover {
-    background: #330066;
+    background: #148869;
     color: #ffffff;
 }
   
 .active a {
-    background: #4D438B;
+    background: #1ab188;
     color: #ffffff;
 }
 
@@ -194,7 +79,7 @@ label {
   position: absolute;
   transform: translateY(6px);
   left: 13px;
-  color: #ffffff;
+  color: #ffffff, 0.5;
   transition: all 0.25s ease;
   -webkit-backface-visibility: hidden;
   pointer-events: none;
@@ -202,7 +87,7 @@ label {
 }
 .req {
     margin: 2px;
-    color: white;
+    color: #1ab188;
 }
 
 
@@ -230,14 +115,14 @@ textarea {
   background: none;
   background-image: none;
   border: 1px solid #a0b3b0;
-  color: white;
+  color: #ffffff;
   border-radius: 0;
   transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
   input,
 textarea:focus {
     outline: 0;
-    border-color: #4D438B;
+    border-color: #1ab188;
   }
 
 
@@ -261,14 +146,14 @@ textarea {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  background: #4D438B;
+  background: #1ab188;
   color: #ffffff;
   transition: all.5s ease;
   -webkit-appearance: none;
 }
   .button:hover,
   .button:focus {
-    background: #330066;
+    background: #11775c;
   
 }
 
@@ -281,4 +166,3 @@ textarea {
   margin-top: -20px;
   text-align: right;
 }
-
