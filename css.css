@@ -253,6 +253,9 @@ textarea {
 
 
 .button {
+  font-family: 'KoHo', sans-serif;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Dosis', sans-serif;
   border: 0;
   outline: none;
   border-radius: 0;
